@@ -5,6 +5,8 @@ trait AppendBar {
 }
 
 // TODO: Implement trait `AppendBar` for a vector of strings.
+// Learning: if we are getting non mutable reference then we can assign that to a mutable reference
+// then we can change it and return it.
 impl AppendBar for Vec<String> {
     fn append_bar(self) -> Self {
         let mut res = self;
